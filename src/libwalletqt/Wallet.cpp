@@ -812,11 +812,11 @@ void Wallet::getTxKeyAsync(const QString &txid, const QJSValue &callback)
 
 QString Wallet::checkTxKey(const QString &txid, const QString &tx_key, const QString &address)
 {
-    uint64_t received;
+    std::map<std::string, uint64_t> received;
     bool in_pool;
     uint64_t confirmations;
     bool success = m_walletImpl->checkTxKey(txid.toStdString(), tx_key.toStdString(), address.toStdString(), received, in_pool, confirmations);
-    std::string result = std::string(success ? "true" : "false") + "|" + QString::number(received).toStdString() + "|" + std::string(in_pool ? "true" : "false") + "|" + QString::number(confirmations).toStdString();
+    std::string result = std::string(success ? "true" : "false") + "|" + QString::number(received["ZEPH"]).toStdString() + "|" + std::string(in_pool ? "true" : "false") + "|" + QString::number(confirmations).toStdString();
     return QString::fromStdString(result);
 }
 
@@ -838,11 +838,11 @@ void Wallet::getTxProofAsync(const QString &txid, const QString &address, const 
 QString Wallet::checkTxProof(const QString &txid, const QString &address, const QString &message, const QString &signature)
 {
     bool good;
-    uint64_t received;
+    std::map<std::string, uint64_t> received;
     bool in_pool;
     uint64_t confirmations;
     bool success = m_walletImpl->checkTxProof(txid.toStdString(), address.toStdString(), message.toStdString(), signature.toStdString(), good, received, in_pool, confirmations);
-    std::string result = std::string(success ? "true" : "false") + "|" + std::string(good ? "true" : "false") + "|" + QString::number(received).toStdString() + "|" + std::string(in_pool ? "true" : "false") + "|" + QString::number(confirmations).toStdString();
+    std::string result = std::string(success ? "true" : "false") + "|" + std::string(good ? "true" : "false") + "|" + QString::number(received["ZEPH"]).toStdString() + "|" + std::string(in_pool ? "true" : "false") + "|" + QString::number(confirmations).toStdString();
     return QString::fromStdString(result);
 }
 

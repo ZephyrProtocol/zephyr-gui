@@ -74,7 +74,7 @@ Popup {
             font.bold: true
             font.family: MoneroComponents.Style.fontRegular.name
             font.pixelSize: 18
-            text: qsTr("New Monero version v%1 is available.").arg(updateDialog.version)
+            text: qsTr("New Zephyr version v%1 is available.").arg(updateDialog.version)
         }
 
         Text {

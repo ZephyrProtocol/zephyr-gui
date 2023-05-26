@@ -7,7 +7,7 @@ if(APPLE OR (WIN32 AND NOT STATIC))
         find_program(MACDEPLOYQT_EXECUTABLE macdeployqt HINTS "${_qt_bin_dir}")
         add_custom_command(TARGET deploy
                            POST_BUILD
-                           COMMAND "${MACDEPLOYQT_EXECUTABLE}" "$<TARGET_FILE_DIR:monero-wallet-gui>/../.." -always-overwrite -qmldir="${CMAKE_SOURCE_DIR}"
+                           COMMAND "${MACDEPLOYQT_EXECUTABLE}" "$<TARGET_FILE_DIR:zephyr-wallet-gui>/../.." -always-overwrite -qmldir="${CMAKE_SOURCE_DIR}"
                            COMMENT "Running macdeployqt..."
         )
 
@@ -16,15 +16,15 @@ if(APPLE OR (WIN32 AND NOT STATIC))
         if(_qt_svg_dylib)
             add_custom_command(TARGET deploy
                                POST_BUILD
-                               COMMAND ${CMAKE_COMMAND} -E copy ${_qt_svg_dylib} $<TARGET_FILE_DIR:monero-wallet-gui>/../PlugIns/imageformats/
+                               COMMAND ${CMAKE_COMMAND} -E copy ${_qt_svg_dylib} $<TARGET_FILE_DIR:zephyr-wallet-gui>/../PlugIns/imageformats/
                                COMMENT "Copying libqsvg.dylib"
             )
         endif()
 
     elseif(WIN32)
         find_program(WINDEPLOYQT_EXECUTABLE windeployqt HINTS "${_qt_bin_dir}")
-        add_custom_command(TARGET monero-wallet-gui POST_BUILD
-                           COMMAND "${CMAKE_COMMAND}" -E env PATH="${_qt_bin_dir}" "${WINDEPLOYQT_EXECUTABLE}" "$<TARGET_FILE:monero-wallet-gui>" -no-translations -qmldir="${CMAKE_SOURCE_DIR}"
+        add_custom_command(TARGET zephyr-wallet-gui POST_BUILD
+                           COMMAND "${CMAKE_COMMAND}" -E env PATH="${_qt_bin_dir}" "${WINDEPLOYQT_EXECUTABLE}" "$<TARGET_FILE:zephyr-wallet-gui>" -no-translations -qmldir="${CMAKE_SOURCE_DIR}"
                            COMMENT "Running windeployqt..."
         )
         set(WIN_DEPLOY_DLLS
@@ -92,7 +92,7 @@ if(APPLE OR (WIN32 AND NOT STATIC))
         list(TRANSFORM WIN_DEPLOY_DLLS PREPEND "$ENV{MSYSTEM_PREFIX}/bin/")
         add_custom_command(TARGET deploy
                            POST_BUILD
-                           COMMAND ${CMAKE_COMMAND} -E copy ${WIN_DEPLOY_DLLS} "$<TARGET_FILE_DIR:monero-wallet-gui>"
+                           COMMAND ${CMAKE_COMMAND} -E copy ${WIN_DEPLOY_DLLS} "$<TARGET_FILE_DIR:zephyr-wallet-gui>"
                            COMMENT "Copying DLLs to target folder"
         )
     endif()

@@ -55,7 +55,7 @@ import "version.js" as Version
 
 ApplicationWindow {
     id: appWindow
-    title: "Monero" +
+    title: "Zephyr" +
         (persistentSettings.displayWalletNameInTitleBar && walletName
         ? " - " + walletName
         : "")
@@ -415,14 +415,14 @@ ApplicationWindow {
         leftPanel.balanceString = balance
         leftPanel.balanceUnlockedString = balanceU
         if (middlePanel.state === "Account") {
-            middlePanel.accountView.balanceAllText = walletManager.displayAmount(appWindow.currentWallet.balanceAll()) + " XMR";
-            middlePanel.accountView.unlockedBalanceAllText = walletManager.displayAmount(appWindow.currentWallet.unlockedBalanceAll()) + " XMR";
+            middlePanel.accountView.balanceAllText = walletManager.displayAmount(appWindow.currentWallet.balanceAll()) + " ZEPH";
+            middlePanel.accountView.unlockedBalanceAllText = walletManager.displayAmount(appWindow.currentWallet.unlockedBalanceAll()) + " ZEPH";
         }
     }
 
     function onUriHandler(uri){
-        if(uri.startsWith("monero://")){
-            var address = uri.substring("monero://".length);
+        if(uri.startsWith("zephyr://")){
+            var address = uri.substring("zephyr://".length);
 
             var params = {}
             if(address.length === 0) return;
@@ -754,7 +754,7 @@ ApplicationWindow {
         // resume refresh
         currentWallet.startRefresh();
         informationPopup.title = qsTr("Daemon failed to start") + translationManager.emptyString;
-        informationPopup.text  = error + ".\n\n" + qsTr("Please check your wallet and daemon log for errors. You can also try to start %1 manually.").arg((isWindows)? "monerod.exe" : "monerod")
+        informationPopup.text  = error + ".\n\n" + qsTr("Please check your wallet and daemon log for errors. You can also try to start %1 manually.").arg((isWindows)? "zephyrd.exe" : "zephyrd")
         if (middlePanel.advancedView.miningView.stopMiningEnabled == true) {
             walletManager.stopMining()
             p2poolManager.exit()
@@ -803,7 +803,7 @@ ApplicationWindow {
 
     function onWalletMoneySent(txId, amount) {
         // refresh transaction history here
-        console.log("monero sent found")
+        console.log("zephyr sent found")
         currentWallet.history.refresh(currentWallet.currentSubaddressAccount); // this will refresh model
 
         if(middlePanel.state == "History")
@@ -1357,7 +1357,7 @@ ApplicationWindow {
                 oshelper.createDesktopEntry();
             } else if (isLinux) {
                 confirmationDialog.title = qsTr("Desktop entry") + translationManager.emptyString;
-                confirmationDialog.text  = qsTr("Would you like to register Monero GUI Desktop entry?") + translationManager.emptyString;
+                confirmationDialog.text  = qsTr("Would you like to register Zephyr GUI Desktop entry?") + translationManager.emptyString;
                 confirmationDialog.icon = StandardIcon.Question;
                 confirmationDialog.cancelText = qsTr("No") + translationManager.emptyString;
                 confirmationDialog.okText = qsTr("Yes") + translationManager.emptyString;
@@ -1376,7 +1376,7 @@ ApplicationWindow {
         id: persistentSettings
         fileName: {
             if(isTails && tailsUsePersistence)
-                return homePath + "/Persistent/Monero/monero-core.conf";
+                return homePath + "/Persistent/Zephyr/zephyr-core.conf";
             return "";
         }
 
@@ -2200,7 +2200,7 @@ ApplicationWindow {
     function checkUpdates() {
         const version = Version.GUI_VERSION.match(/\d+\.\d+\.\d+\.\d+/);
         if (version) {
-            walletManager.checkUpdatesAsync("monero-gui", "gui", getBuildTag(), version[0]);
+            walletManager.checkUpdatesAsync("zephyr-gui", "gui", getBuildTag(), version[0]);
         } else {
             console.error("failed to parse version number", Version.GUI_VERSION);
         }

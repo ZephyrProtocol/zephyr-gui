@@ -76,21 +76,21 @@ Source: "FinishImage.bmp"; Flags: dontcopy
 Source: "LICENSE"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Monero GUI wallet exe and guide
-Source: "bin\monero-wallet-gui.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\monero-gui-wallet-guide.pdf"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\zephyr-wallet-gui.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\zephyr-gui-wallet-guide.pdf"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Monero CLI wallet
-Source: "bin\extras\monero-wallet-cli.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\extras\monero-gen-trusted-multisig.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\extras\zephyr-wallet-cli.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\extras\zephyr-gen-trusted-multisig.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Monero wallet RPC interface implementation
-Source: "bin\extras\monero-wallet-rpc.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\extras\zephyr-wallet-rpc.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Monero daemon
-Source: "bin\monerod.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\zephyrd.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Monero daemon wrapped in a batch file that stops before the text window closes, to see any error messages
-Source: "monero-daemon.bat"; DestDir: "{app}"; Flags: ignoreversion;
+Source: "zephyr-daemon.bat"; DestDir: "{app}"; Flags: ignoreversion;
 
 ; Monero blockchain utilities
 Source: "bin\extras\monero-blockchain-export.exe"; DestDir: "{app}"; Flags: ignoreversion
@@ -300,7 +300,7 @@ procedure CurStepChanged(CurStep: TSetupStep);
 var s: TArrayOfString;
 begin
   if CurStep = ssPostInstall then begin
-    // Re-build "monero-daemon.bat" according to actual install and blockchain directory used
+    // Re-build "zephyr-daemon.bat" according to actual install and blockchain directory used
     SetArrayLength(s, 3);
     s[0] := 'REM Execute the Monero daemon and then stay with window open after it exits';
     s[1] := '"' + ExpandConstant('{app}\monerod.exe') + '" ' + DaemonFlags('');
@@ -321,7 +321,7 @@ end;
 
 
 [Icons]
-; Icons in the "Monero GUI Wallet" program group
+; Icons in the "Zephyr GUI Wallet" program group
 ; Windows will almost always display icons in alphabetical order, per level, so specify the text accordingly
 Name: "{group}\GUI Wallet"; Filename: "{app}\monero-wallet-gui.exe";
 Name: "{group}\GUI Wallet Guide"; Filename: "{app}\monero-gui-wallet-guide.pdf"; IconFilename: "{app}\monero-wallet-gui.exe"
@@ -360,12 +360,12 @@ Root: HKCU; Subkey: "Software\monero-project"; Flags: uninsdeletekeyifempty
 Root: HKCU; Subkey: "Software\monero-project\monero-core"; Flags: uninsdeletekey
 Root: HKCU; Subkey: "Software\monero-project\monero-core"; ValueType: string; ValueName: "blockchainDataDir"; ValueData: {code:BlockChainDirOrEmpty};
 
-; Configure a custom URI scheme: Links starting with "monero:" will start the GUI wallet exe with the URI as command-line parameter
-; Used to easily start payments; example URI: "monero://<address>?tx_amount=5.0"
-Root: HKCR; Subkey: "monero"; ValueType: "string"; ValueData: "URL:Monero Payment Protocol"; Flags: uninsdeletekey
-Root: HKCR; Subkey: "monero"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
-Root: HKCR; Subkey: "monero\DefaultIcon"; ValueType: "string"; ValueData: "{app}\monero-wallet-gui.exe,0"
-Root: HKCR; Subkey: "monero\shell\open\command"; ValueType: "string"; ValueData: """{app}\monero-wallet-gui.exe"" ""%1"""
+; Configure a custom URI scheme: Links starting with "zephyr:" will start the GUI wallet exe with the URI as command-line parameter
+; Used to easily start payments; example URI: "zephyr://<address>?tx_amount=5.0"
+Root: HKCR; Subkey: "zephyr"; ValueType: "string"; ValueData: "URL:Monero Payment Protocol"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "zephyr"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
+Root: HKCR; Subkey: "zephyr\DefaultIcon"; ValueType: "string"; ValueData: "{app}\monero-wallet-gui.exe,0"
+Root: HKCR; Subkey: "zephyr\shell\open\command"; ValueType: "string"; ValueData: """{app}\monero-wallet-gui.exe"" ""%1"""
 
 ; Configure a custom URI scheme: Links starting with "moneroseed:" will start the GUI wallet exe with the URI as command-line parameter
 ; Used to easily hand over custom seed node info to the wallet, with an URI of the form "moneroseed://a.b.c.d:port"

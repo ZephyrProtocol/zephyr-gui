@@ -85,7 +85,7 @@ Rectangle {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
 
-                source: "qrc:///images/moneroLogo_white.png"
+                source: "qrc:///images/zephyrLogo_white.png"
             }
         }
 

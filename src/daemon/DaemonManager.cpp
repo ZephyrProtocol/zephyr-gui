@@ -187,9 +187,9 @@ bool DaemonManager::stopWatcher(NetworkType::Type nettype, const QString &dataDi
             if(counter >= 5) {
                 qDebug() << "Killing it! ";
 #ifdef Q_OS_WIN
-                QProcess::execute("taskkill",  {"/F", "/IM", "monerod.exe"});
+                QProcess::execute("taskkill",  {"/F", "/IM", "zephyrd.exe"});
 #else
-                QProcess::execute("pkill", {"monerod"});
+                QProcess::execute("pkill", {"zephyrd"});
 #endif
             }
 
@@ -350,7 +350,7 @@ QString DaemonManager::getArgs(const QString &dataDir) {
     QStringList tempArgs;
     #ifdef Q_OS_WIN
         //powershell
-        tempArgs << "Get-CimInstance Win32_Process -Filter \"name = 'monerod.exe'\" | select -ExpandProperty CommandLine ";
+        tempArgs << "Get-CimInstance Win32_Process -Filter \"name = 'zephyrd.exe'\" | select -ExpandProperty CommandLine ";
         p.setProgram("powershell");
         p.setArguments(tempArgs);
         p.start();
@@ -359,7 +359,7 @@ QString DaemonManager::getArgs(const QString &dataDir) {
 
     #elif defined(Q_OS_UNIX)
         //pgrep
-        tempArgs << "monerod";
+        tempArgs << "zephyrd";
         p.setProgram("pgrep");
         p.setArguments(tempArgs);
         p.start();
@@ -400,9 +400,9 @@ DaemonManager::DaemonManager(QObject *parent)
 
     // Platform depetent path to monerod
 #ifdef Q_OS_WIN
-    m_monerod = QApplication::applicationDirPath() + "/monerod.exe";
+    m_monerod = QApplication::applicationDirPath() + "/zephyrd.exe";
 #elif defined(Q_OS_UNIX)
-    m_monerod = QApplication::applicationDirPath() + "/monerod";
+    m_monerod = QApplication::applicationDirPath() + "/zephyrd";
 #endif
 
     if (m_monerod.length() == 0) {

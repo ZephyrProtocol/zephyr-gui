@@ -1,6 +1,6 @@
-[submodule "monero"]
-	path = monero
-	url = https://github.com/monero-project/monero
+[submodule "zephyr"]
+	path = zephyr
+	url = git@github.com:ZephyrProtocol/Zephyr.git
 	ignore = all
 [submodule "external/quirc"]
 	path = external/quirc

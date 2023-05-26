@@ -205,7 +205,7 @@ Rectangle {
                     if (root.transactionAmount == "(all)" && currentWallet.isHwBacked() === true) {
                         return qsTr("All unlocked balance") +  translationManager.emptyString;
                     } else {
-                        return root.transactionAmount + " XMR " +  translationManager.emptyString;
+                        return root.transactionAmount + " ZEPH " +  translationManager.emptyString;
                     }
                 }
             }
@@ -308,10 +308,10 @@ Rectangle {
                             if (addressBookName) {
                                 title = FontAwesome.addressBook + " " + addressBookName;
                             } else {
-                                title = qsTr("Monero address") + translationManager.emptyString;
+                                title = qsTr("Zephyr address") + translationManager.emptyString;
                             }
                             if (recipients.length > 1) {
-                                title = "%1. %2 - %3 XMR".arg(index + 1).arg(title).arg(recipient.amount);
+                                title = "%1. %2 - %3 ZEPH".arg(index + 1).arg(title).arg(recipient.amount);
                                 if (persistentSettings.fiatPriceEnabled) {
                                     title += " (%1)".arg(showFiatConversion(recipient.amount));
                                 }
@@ -350,7 +350,7 @@ Rectangle {
                                     return qsTr("Calculating fee") + "..." +  translationManager.emptyString;
                                 }
                             } else {
-                                return root.transactionFee + " XMR" + (maliciousTxFee ? " (HIGH FEE)" : "")
+                                return root.transactionFee + " ZEPH" + (maliciousTxFee ? " (HIGH FEE)" : "")
                             }
                         } else {
                             return "";

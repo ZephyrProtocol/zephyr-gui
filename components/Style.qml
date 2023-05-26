@@ -143,7 +143,7 @@ QtObject {
     property string _b_leftPanelBackgroundGradientStart: "#222222"
     property string _b_leftPanelBackgroundGradientStop: "#1a1a1a"
     property string _b_historyHeaderTextColor: "#C0C0C0"
-    property var _b_accountColors: ["#6E513C", "#842129", "#458421", "#742184", "#291DBE", "#846F21", "#217F84", "#696969"]
+    property var _b_accountColors: ["#6E513C", "#842129", "#458421", "#742184"]
 
     property string _w_defaultFontColor: "black"
     property string _w_dimmedFontColor: "#3f3f3f"

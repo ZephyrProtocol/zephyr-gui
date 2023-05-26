@@ -174,7 +174,7 @@ Rectangle {
         MoneroComponents.SettingsListItem {
             iconText: FontAwesome.cashRegister
             isLast: true
-            description: qsTr("Receive Monero for your business, easily.") + translationManager.emptyString
+            description: qsTr("Receive Zephyr for your business, easily.") + translationManager.emptyString
             title: qsTr("Enter merchant mode") + translationManager.emptyString
 
             onClicked: {

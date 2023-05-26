@@ -83,7 +83,7 @@ QString getAccountName(){
     if (accountName.isEmpty())
         accountName = qgetenv("USERNAME"); // Windows
     if (accountName.isEmpty())
-        accountName = "My monero Account";
+        accountName = "My zephyr Account";
     return accountName;
 }
 
@@ -91,21 +91,21 @@ QString getAccountName(){
 QString xdgMime(){
     return QString(
         "[Desktop Entry]\n"
-        "Name=Monero GUI\n"
-        "GenericName=Monero-GUI\n"
-        "X-GNOME-FullName=Monero-GUI\n"
-        "Comment=Monero GUI\n"
-        "Keywords=Monero;\n"
+        "Name=Zephyr GUI\n"
+        "GenericName=Zephyr-GUI\n"
+        "X-GNOME-FullName=Zephyr-GUI\n"
+        "Comment=Zephyr GUI\n"
+        "Keywords=Zephyr;\n"
         "Exec=%1 %u\n"
         "Terminal=false\n"
         "Type=Application\n"
-        "Icon=monero\n"
+        "Icon=Zephyr\n"
         "Categories=Network;GNOME;Qt;\n"
-        "MimeType=x-scheme-handler/monero;x-scheme-handler/moneroseed\n"
+        "MimeType=x-scheme-handler/zephyr;x-scheme-handler/moneroseed\n"
         "StartupNotify=true\n"
         "X-GNOME-Bugzilla-Bugzilla=GNOME\n"
         "X-GNOME-UsesNotifications=true\n"
-        "StartupWMClass=monero-wallet-gui\n"
+        "StartupWMClass=zephyr-wallet-gui\n"
     ).arg(QCoreApplication::applicationFilePath());
 }
 
@@ -117,7 +117,7 @@ void registerXdgMime(){
     // - Tails written to persistent dotfiles
     QString mime = xdgMime();
     QString appPath = QStandardPaths::writableLocation(QStandardPaths::ApplicationsLocation);
-    QString filePath = QString("%1/monero-gui.desktop").arg(appPath);
+    QString filePath = QString("%1/zephyr-gui.desktop").arg(appPath);
 
     if (TailsOS::detect())
     {

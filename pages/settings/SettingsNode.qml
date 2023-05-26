@@ -222,7 +222,7 @@ Rectangle{
                     wrapMode: Text.WordWrap;
                     leftPadding: 0
                     topPadding: 0
-                    text: qsTr("Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.") + translationManager.emptyString
+                    text: qsTr("Uses a third-party server to connect to the Zephyr network. Less secure, but easier on your computer.") + translationManager.emptyString
                     width: parent.width - (remoteNodeIcon.width + remoteNodeIcon.anchors.leftMargin + anchors.leftMargin)
                 }
 
@@ -251,7 +251,7 @@ Rectangle{
 
         MoneroComponents.WarningBox {
             Layout.topMargin: 46
-            text: qsTr("To find a remote node, type 'Monero remote node' into your favorite search engine. Please ensure the node is run by a trusted third-party.") + translationManager.emptyString
+            text: qsTr("To find a remote node, type 'Zephyr remote node' into your favorite search engine. Please ensure the node is run by a trusted third-party.") + translationManager.emptyString
             visible: persistentSettings.useRemoteNode
         }
 

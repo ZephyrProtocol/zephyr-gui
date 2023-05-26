@@ -74,7 +74,7 @@ Rectangle {
 
         MoneroComponents.TextPlain {
             id: soloMainLabel
-            text: qsTr("Mining with your computer helps strengthen the Monero network. The more people mine, the harder it is for the network to be attacked, and every little bit helps.\n\nMining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!") + "\n\n" + qsTr("P2Pool mining is a decentralized way to pool mine that pays out more frequently compared to solo mining, while also supporting the network.") + translationManager.emptyString
+            text: qsTr("Mining with your computer helps strengthen the Zephyr network. The more people mine, the harder it is for the network to be attacked, and every little bit helps.\n\nMining also gives you a small chance to earn some Zephyr. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!") + "\n\n" + qsTr("P2Pool mining is a decentralized way to pool mine that pays out more frequently compared to solo mining, while also supporting the network.") + translationManager.emptyString
             wrapMode: Text.Wrap
             Layout.fillWidth: true
             font.family: MoneroComponents.Style.fontRegular.name
@@ -449,9 +449,9 @@ Rectangle {
                     text: "
                     Usage:<br>
                         --wallet             Wallet address to mine to. Subaddresses and integrated addresses are not supported!<br>
-                        --host               IP address of your Monero node, default is 127.0.0.1<br>
-                        --rpc-port           monerod RPC API port number, default is 18081<br>
-                        --zmq-port           monerod ZMQ pub port number, default is 18083 (same port as in monerod\'s \"--zmq-pub\" command line parameter)<br>
+                        --host               IP address of your Zephyr node, default is 127.0.0.1<br>
+                        --rpc-port           zephyrd RPC API port number, default is 18081<br>
+                        --zmq-port           zephyrd ZMQ pub port number, default is 18083 (same port as in zephyrd\'s \"--zmq-pub\" command line parameter)<br>
                         --stratum            Comma-separated list of IP:port for stratum server to listen on<br>
                         --p2p                Comma-separated list of IP:port for p2p server to listen on<br>
                         --addpeers           Comma-separated list of IP:port of other p2pool nodes to connect to<br>
@@ -463,7 +463,7 @@ Rectangle {
                         --stratum-api        An alias for --local-api<br>
                         --no-cache           Disable p2pool.cache<br>
                         --no-color           Disable colors in console output<br>
-                        --no-randomx         Disable internal RandomX hasher: p2pool will use RPC calls to monerod to check PoW hashes<br>
+                        --no-randomx         Disable internal RandomX hasher: p2pool will use RPC calls to zephyrd to check PoW hashes<br>
                         --out-peers N        Maximum number of outgoing connections for p2p server (any value between 10 and 1000)<br>
                         --in-peers N         Maximum number of incoming connections for p2p server (any value between 10 and 1000)<br>
                         --start-mining N     Start built-in miner using N threads (any value between 1 and 64)<br>

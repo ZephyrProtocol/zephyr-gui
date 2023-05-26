@@ -69,8 +69,8 @@
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="93"/>
-        <source>This makes it easier to send or receive Monero and reduces errors when typing in addresses manually.</source>
-        <translation>Це полегшує надсилання та отримання Monero і знижує кількість помилок при введенні адрес вручну.</translation>
+        <source>This makes it easier to send or receive Zephyr and reduces errors when typing in addresses manually.</source>
+        <translation>Це полегшує надсилання та отримання Zephyr і знижує кількість помилок при введенні адрес вручну.</translation>
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="102"/>
@@ -634,13 +634,13 @@ It is recommended to enter passphrase on the hardware wallet for better security
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="62"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>ПОПЕРЕДЖЕННЯ: Не використовуйте повторно свої ключі Monero в іншому форку, ЯКЩО ТІЛЬКИ цей форк не має вбудованих засобів захисту від компрометації введених ключів. Подібні дії можуть зашкодити вашій конфіденційності.</translation>
+        <source>WARNING: Do not reuse your Zephyr keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>ПОПЕРЕДЖЕННЯ: Не використовуйте повторно свої ключі Zephyr в іншому форку, ЯКЩО ТІЛЬКИ цей форк не має вбудованих засобів захисту від компрометації введених ключів. Подібні дії можуть зашкодити вашій конфіденційності.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="85"/>
-        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Monero. Please write down your seed manually.</source>
-        <translation>УВАГА: Копіювання вашої мнемонічної фрази в буфер обміну може супроводжуватися перехопленням цих даних різним шкідливим програмним забезпеченням, яке відправить вашу мнемоніку зловмисникові, після чого ваші Monero можуть бути вкрадені. Будь ласка, введіть вашу мнемонічну фразу вручну з клавіатури.</translation>
+        <source>WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Zephyr. Please write down your seed manually.</source>
+        <translation>УВАГА: Копіювання вашої мнемонічної фрази в буфер обміну може супроводжуватися перехопленням цих даних різним шкідливим програмним забезпеченням, яке відправить вашу мнемоніку зловмисникові, після чого ваші Zephyr можуть бути вкрадені. Будь ласка, введіть вашу мнемонічну фразу вручну з клавіатури.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="106"/>
@@ -1065,9 +1065,9 @@ It is recommended to enter passphrase on the hardware wallet for better security
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="76"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more people mine, the harder it is for the network to be attacked, and every little bit helps.
+        <source>Mining with your computer helps strengthen the Zephyr network. The more people mine, the harder it is for the network to be attacked, and every little bit helps.
 
-Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+Mining also gives you a small chance to earn some Zephyr. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1718,8 +1718,8 @@ Mining also gives you a small chance to earn some Monero. Your computer will cre
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="102"/>
-        <source>Embedded Monero version: </source>
-        <translation>Вбудована версія Monero: </translation>
+        <source>Embedded Zephyr version: </source>
+        <translation>Вбудована версія Zephyr: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="132"/>
@@ -1829,12 +1829,12 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="410"/>
-        <source>Donate to Monero</source>
+        <source>Donate to Zephyr</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="412"/>
-        <source>Donation to Monero Core Team</source>
+        <source>Donation to Zephyr Core Team</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2013,13 +2013,13 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="224"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
-        <translation>Використовувати сторонній вузол для підключення до мережі Monero. Менш безпечно, але більш зручно.</translation>
+        <source>Uses a third-party server to connect to the Zephyr network. Less secure, but easier on your computer.</source>
+        <translation>Використовувати сторонній вузол для підключення до мережі Zephyr. Менш безпечно, але більш зручно.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="253"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Щоб отримати список віддалених нод, введіть &apos;Monero remote node&apos; у вашій улюбленій пошуковій системі. Будь ласка, переконайтеся, що обраній ноді можна довіряти.</translation>
+        <source>To find a remote node, type &apos;Zephyr remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Щоб отримати список віддалених нод, введіть &apos;Zephyr remote node&apos; у вашій улюбленій пошуковій системі. Будь ласка, переконайтеся, що обраній ноді можна довіряти.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="317"/>
@@ -2203,7 +2203,7 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/settings/SettingsWallet.qml" line="177"/>
-        <source>Receive Monero for your business, easily.</source>
+        <source>Receive Zephyr for your business, easily.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2231,8 +2231,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="103"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>На цій сторінці можна взаємодіяти із загальною базою даних RingDB. Ця база даних призначена для використання гаманцями Monero або їх клонів, які зможуть повторно використовувати ключі Monero.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Zephyr wallets as well as wallets from Zephyr clones which reuse the Zephyr keys.</source>
+        <translation>На цій сторінці можна взаємодіяти із загальною базою даних RingDB. Ця база даних призначена для використання гаманцями Zephyr або їх клонів, які зможуть повторно використовувати ключі Zephyr.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="115"/>
@@ -2241,8 +2241,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="116"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>Для того щоб приховати які входи в транзакціях Monero були витрачені, третя сторона не повинна повідомляти які входи в кільці вже задіяні в витраті. Адже якщо це зробити, то це послабить захист, який забезпечується кільцевими підписами. Якщо відомо, що всі, крім одного з входів, вже витрачені, то фактично трата входу стає очевидною, тим самим анулюється ефект кільцевих підписів, одного з трьох основних рівнів захисту конфіденційності Monero.&lt;br&gt;Щоб допомогти транзакціям уникнути витрати цих входів, можна використовувати список відомих витрачених входів, щоб уникнути їх використання в нових транзакціях. Такий список підтримується проектом Monero і доступний на веб-сайті getmonero.org, і ви можете імпортувати цей список тут.&lt;br&gt;Крім того, ви можете просканувати блокчейн (і блокчейни клонів Monero) самостійно, використовуючи інструмент monero-blockchain-mark-spent-outputs, щоб створити список відомих витрачених входів.&lt;br&gt;</translation>
+        <source>In order to obscure which inputs in a Zephyr transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Zephyr uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Zephyr project and is available on the getZephyr.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Zephyr clones) yourself using the Zephyr-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>Для того щоб приховати які входи в транзакціях Zephyr були витрачені, третя сторона не повинна повідомляти які входи в кільці вже задіяні в витраті. Адже якщо це зробити, то це послабить захист, який забезпечується кільцевими підписами. Якщо відомо, що всі, крім одного з входів, вже витрачені, то фактично трата входу стає очевидною, тим самим анулюється ефект кільцевих підписів, одного з трьох основних рівнів захисту конфіденційності Zephyr.&lt;br&gt;Щоб допомогти транзакціям уникнути витрати цих входів, можна використовувати список відомих витрачених входів, щоб уникнути їх використання в нових транзакціях. Такий список підтримується проектом Zephyr і доступний на веб-сайті getZephyr.org, і ви можете імпортувати цей список тут.&lt;br&gt;Крім того, ви можете просканувати блокчейн (і блокчейни клонів Zephyr) самостійно, використовуючи інструмент Zephyr-blockchain-mark-spent-outputs, щоб створити список відомих витрачених входів.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="134"/>
@@ -2311,13 +2311,13 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="247"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>Щоб уникнути скасування захисту, що забезпечується кільцевими підписами Monero, вихід не повинен проводитися з різними кільцями на різних блокчейнах. Хоча це як правило не викликає занепокоєння, він може стати одним, якщо якийсь клон Monero, що використовує ключ повторно, дозволяє вам витрачати існуючі виходи. В цьому випадку вам необхідно забезпечити, щоб ці існуючі виходи використовували одне і те ж кільце для обох блокчейнів.&lt;br&gt;Це може бути зроблено автоматично, або будь-яким програмним забезпеченням з можливістю повторного використання ключів, яке не спробує позбавити вас конфіденційності.&lt;br&gt;Якщо ви використовуєте клон Monero з повторним використанням ключа, і цей клон не включає цей захист, ви все одно можете гарантувати, що ваші транзакції будуть захищені, зробивши їх спочатку на клоні, потім вручну додати кільце на цій сторінці, що дозволить вам конфіденційно перевести ваші Monero.&lt;br&gt;Якщо ви не використовуєте клон Monero з повторним використанням ключів без цих функцій безпеки, то вам не потрібно нічого робити, оскільки все автоматизовано.&lt;br&gt;</translation>
+        <source>In order to avoid nullifying the protection afforded by Zephyr&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Zephyr clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Zephyr and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Zephyr clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Zephyr safely.&lt;br&gt;If you do not use a key-reusing Zephyr clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>Щоб уникнути скасування захисту, що забезпечується кільцевими підписами Zephyr, вихід не повинен проводитися з різними кільцями на різних блокчейнах. Хоча це як правило не викликає занепокоєння, він може стати одним, якщо якийсь клон Zephyr, що використовує ключ повторно, дозволяє вам витрачати існуючі виходи. В цьому випадку вам необхідно забезпечити, щоб ці існуючі виходи використовували одне і те ж кільце для обох блокчейнів.&lt;br&gt;Це може бути зроблено автоматично, або будь-яким програмним забезпеченням з можливістю повторного використання ключів, яке не спробує позбавити вас конфіденційності.&lt;br&gt;Якщо ви використовуєте клон Zephyr з повторним використанням ключа, і цей клон не включає цей захист, ви все одно можете гарантувати, що ваші транзакції будуть захищені, зробивши їх спочатку на клоні, потім вручну додати кільце на цій сторінці, що дозволить вам конфіденційно перевести ваші Zephyr.&lt;br&gt;Якщо ви не використовуєте клон Zephyr з повторним використанням ключів без цих функцій безпеки, то вам не потрібно нічого робити, оскільки все автоматизовано.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="266"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Тут записуються кільця, що використовуються виходами проведеними на Monero, так що одне і те ж кільце можна використовувати повторно, щоб уникнути проблем з конфіденційністю.</translation>
+        <source>This records rings used by outputs spent on Zephyr on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>Тут записуються кільця, що використовуються виходами проведеними на Zephyr, так що одне і те ж кільце можна використовувати повторно, щоб уникнути проблем з конфіденційністю.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="277"/>
@@ -2501,8 +2501,8 @@ You can change the password in the wallet settings.</source>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="341"/>
-        <source>Enter the Monero Address (example: 44AFFq5kSiGBoZ...)</source>
-        <translation>Введіть адресу Monero (наприклад: 44AFFq5kSiGBoZ...)</translation>
+        <source>Enter the Zephyr Address (example: 44AFFq5kSiGBoZ...)</source>
+        <translation>Введіть адресу Zephyr (наприклад: 44AFFq5kSiGBoZ...)</translation>
     </message>
     <message>
         <location filename="../pages/Sign.qml" line="351"/>
@@ -2747,8 +2747,8 @@ Confirmation message:
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="1071"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero відправлено успішно</translation>
+        <source>Zephyr sent successfully</source>
+        <translation>Zephyr відправлено успішно</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="1194"/>
@@ -2803,7 +2803,7 @@ Please upgrade or connect to another daemon</source>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="169"/>
-        <source>Spendable funds: %1 XMR. Please wait ~%2 minutes for your whole balance to become spendable.</source>
+        <source>Spendable funds: %1 ZEPH. Please wait ~%2 minutes for your whole balance to become spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2910,7 +2910,7 @@ Please upgrade or connect to another daemon</source>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="985"/>
-        <source>Spend XMR from a cold (offline) wallet</source>
+        <source>Spend ZEPH from a cold (offline) wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3109,7 +3109,7 @@ Please upgrade or connect to another daemon</source>
     </message>
     <message>
         <location filename="../components/TxConfirmationDialog.qml" line="311"/>
-        <source>Monero address</source>
+        <source>Zephyr address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3195,7 +3195,7 @@ For reserve proofs you don&apos;t need to specify tx id or address.</source>
     </message>
     <message>
         <location filename="../pages/TxKey.qml" line="109"/>
-        <source>Paste amount of XMR (reserve proof only)</source>
+        <source>Paste amount of ZEPH (reserve proof only)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3262,12 +3262,12 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>UpdateDialog</name>
     <message>
         <location filename="../components/UpdateDialog.qml" line="77"/>
-        <source>New Monero version v%1 is available.</source>
+        <source>New Zephyr version v%1 is available.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../components/UpdateDialog.qml" line="98"/>
-        <source>Please visit getmonero.org for details</source>
+        <source>Please visit getZephyr.org for details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3649,8 +3649,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardCreateWallet3.qml" line="60"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.</source>
-        <translation>Щоб мати можливість обмінюватися даними з мережею Monero, ваш гаманець повинен бути підключений до ноди Monero. Для кращої конфіденційності рекомендується запустити свою власну ноду.</translation>
+        <source>To be able to communicate with the Zephyr network your wallet needs to be connected to a Zephyr node. For best privacy it&apos;s recommended to run your own node.</source>
+        <translation>Щоб мати можливість обмінюватися даними з мережею Zephyr, ваш гаманець повинен бути підключений до ноди Zephyr. Для кращої конфіденційності рекомендується запустити свою власну ноду.</translation>
     </message>
 </context>
 <context>
@@ -3710,8 +3710,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="152"/>
-        <source>Additionally, you may specify a bootstrap node to use Monero immediately.</source>
-        <translation>Окрім цього, ви можете вказати ноду швидкого завантаження, щоб негайно почати користуватися Monero.</translation>
+        <source>Additionally, you may specify a bootstrap node to use Zephyr immediately.</source>
+        <translation>Окрім цього, ви можете вказати ноду швидкого завантаження, щоб негайно почати користуватися Zephyr.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="192"/>
@@ -3723,7 +3723,7 @@ your input may be required.</source>
     <name>WizardHome</name>
     <message>
         <location filename="../wizard/WizardHome.qml" line="66"/>
-        <source>Welcome to Monero</source>
+        <source>Welcome to Zephyr</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3745,8 +3745,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="82"/>
-        <source>Choose this option if this is your first time using Monero.</source>
-        <translation>Виберіть цю опцію, якщо ви вперше користуєтесь Monero.</translation>
+        <source>Choose this option if this is your first time using Zephyr.</source>
+        <translation>Виберіть цю опцію, якщо ви вперше користуєтесь Zephyr.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="104"/>
@@ -3755,7 +3755,7 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardHome.qml" line="108"/>
-        <source>Connect your hardware wallet to create a new Monero wallet.</source>
+        <source>Connect your hardware wallet to create a new Zephyr wallet.</source>
         <translation>Створити новий гаманець, підключившись до вашого пристрою-гаманця.</translation>
     </message>
     <message>
@@ -3821,8 +3821,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="84"/>
-        <source>Temporary use of remote nodes is useful in order to use Monero immediately (hence the name bootstrap), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
-        <translation>Тимчасове використання віддалених нод зручно для негайного використання Monero (звідси назва &quot;початкове завантаження&quot;), однак пам&apos;ятайте, що при використанні віддалених нод (включаючи вибір початкового завантаження), ноди можуть відстежувати вашу IP адресу, відстежувати вашу &quot;висоту відновлення&quot; і відповідні дані запиту блоку, і відправляти вам неточну інформацію, щоб дізнатися більше про здійснені вами транзакції.</translation>
+        <source>Temporary use of remote nodes is useful in order to use Zephyr immediately (hence the name bootstrap), however be aware that when using remote nodes (including with the bootstrap setting), nodes could track your IP address, track your &quot;restore height&quot; and associated block request data, and send you inaccurate information to learn more about transactions you make.</source>
+        <translation>Тимчасове використання віддалених нод зручно для негайного використання Zephyr (звідси назва &quot;початкове завантаження&quot;), однак пам&apos;ятайте, що при використанні віддалених нод (включаючи вибір початкового завантаження), ноди можуть відстежувати вашу IP адресу, відстежувати вашу &quot;висоту відновлення&quot; і відповідні дані запиту блоку, і відправляти вам неточну інформацію, щоб дізнатися більше про здійснені вами транзакції.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeBootstrap.qml" line="97"/>
@@ -3844,8 +3844,8 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="72"/>
-        <source>This mode is ideal for managing small amounts of Monero. You have access to basic features for making and managing transactions. It will automatically connect to the Monero network so you can start using Monero immediately.</source>
-        <translation>Цей режим ідеально підходить для управління невеликими сумами Monero. У вас є доступ до основних функцій для здійснення транзакцій та управління ними. Програма автоматично підключиться до мережі Monero, щоб ви відразу могли почати використовувати Monero.</translation>
+        <source>This mode is ideal for managing small amounts of Zephyr. You have access to basic features for making and managing transactions. It will automatically connect to the Zephyr network so you can start using Zephyr immediately.</source>
+        <translation>Цей режим ідеально підходить для управління невеликими сумами Zephyr. У вас є доступ до основних функцій для здійснення транзакцій та управління ними. Програма автоматично підключиться до мережі Zephyr, щоб ви відразу могли почати використовувати Zephyr.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardModeRemoteNodeWarning.qml" line="85"/>
@@ -3935,7 +3935,7 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardModeSelection.qml" line="166"/>
-        <source>Create portable wallets and use them on any PC. Enable if you installed Monero on a USB stick, an external drive, or any other portable storage medium.</source>
+        <source>Create portable wallets and use them on any PC. Enable if you installed Zephyr on a USB stick, an external drive, or any other portable storage medium.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4107,10 +4107,10 @@ your input may be required.</source>
     </message>
     <message>
         <location filename="../wizard/WizardRestoreWallet3.qml" line="63"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.
+        <source>To be able to communicate with the Zephyr network your wallet needs to be connected to a Zephyr node. For best privacy it&apos;s recommended to run your own node.
 
 If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Щоб мати можливість обмінюватися даними з мережею Monero, ваш гаманець повинен бути підключений до ноди Monero. Для кращої конфіденційності рекомендується запустити свою власну ноду.
+        <translation>Щоб мати можливість обмінюватися даними з мережею Zephyr, ваш гаманець повинен бути підключений до ноди Zephyr. Для кращої конфіденційності рекомендується запустити свою власну ноду.
 
 Якщо в вас немає можливості запустити власну ноду, є можливість підключитися до віддаленої ноди.</translation>
     </message>
@@ -4408,8 +4408,8 @@ If you don&apos;t have the option to run your own node, there&apos;s an option t
     </message>
     <message>
         <location filename="../main.qml" line="1055"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Цей адрес отримав %1 XMR, із %2 підтвердженням(и).</translation>
+        <source>This address received %1 Zephyr, with %2 confirmation(s).</source>
+        <translation>Цей адрес отримав %1 ZEPH, із %2 підтвердженням(и).</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1066"/>
@@ -4423,7 +4423,7 @@ If you don&apos;t have the option to run your own node, there&apos;s an option t
     </message>
     <message>
         <location filename="../main.qml" line="1345"/>
-        <source>Would you like to register Monero GUI Desktop entry?</source>
+        <source>Would you like to register Zephyr GUI Desktop entry?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4500,8 +4500,8 @@ If you don&apos;t have the option to run your own node, there&apos;s an option t
     </message>
     <message>
         <location filename="../main.qml" line="1052"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>Цей адрес отримав %1 XMR, але транзакція ще не була підтверджена майнерами</translation>
+        <source>This address received %1 Zephyr, but the transaction is not yet mined</source>
+        <translation>Цей адрес отримав %1 ZEPH, але транзакція ще не була підтверджена майнерами</translation>
     </message>
     <message>
         <location filename="../main.qml" line="836"/>

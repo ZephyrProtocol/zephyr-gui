@@ -193,7 +193,7 @@ QString MoneroSettings::portableFilePath()
 
 QString MoneroSettings::portableFolderName()
 {
-    return "monero-storage";
+    return "zephyr-storage";
 }
 
 std::unique_ptr<QSettings> MoneroSettings::portableSettings() const
