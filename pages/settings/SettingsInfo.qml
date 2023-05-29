@@ -409,7 +409,7 @@ Rectangle {
                 small: true
                 text: qsTr("Donate to Zephyr") + translationManager.emptyString
                 onClicked: {
-                    middlePanel.sendTo("888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H", "", qsTr("Donation to Zephyr Core Team") + translationManager.emptyString);
+                    middlePanel.sendTo("ZEPHs7GjV5o9mnLyEN5kQDLFmQPP7Kxw3YkmrkwRsFamS1SsDEvtoh1j15g9YfwVED5p9XJKF7dofLseMso2RMicazcPQnn3BPD", "", qsTr("Donation to Zephyr Core Team") + translationManager.emptyString);
                 }
             }
         }

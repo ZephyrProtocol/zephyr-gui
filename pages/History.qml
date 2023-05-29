@@ -1426,7 +1426,7 @@ Rectangle {
 
         if (typeof root.model !== 'undefined' && root.model != null) {
             if (!keepDate) {
-                root.model.dateFromFilter = "2014-04-18" // genesis block
+                root.model.dateFromFilter = "2023-05-29" // genesis block
                 root.model.dateToFilter = "9999-09-09" // fix before september 9999
             }
             // negative values disable filters here;
