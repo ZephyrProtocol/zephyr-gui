@@ -589,7 +589,7 @@ Rectangle {
         var noSync = false;
         //these args will be deleted because DaemonManager::start will re-add them later.
         //--no-zmq must be deleted. removing '--zmq-pub=tcp...' lets us blindly add '--zmq-pub tcp...' later without risking duplication.
-        var defaultArgs = ["--detach","--data-dir","--bootstrap-daemon-address","--prune-blockchain","--no-sync","--check-updates","--non-interactive","--max-concurrency","--no-zmq","--zmq-pub=tcp://127.0.0.1:18083"]
+        var defaultArgs = ["--detach","--data-dir","--bootstrap-daemon-address","--prune-blockchain","--no-sync","--check-updates","--non-interactive","--max-concurrency","--no-zmq","--zmq-pub=tcp://127.0.0.1:17768"]
         var customDaemonArgsArray = args.split(' ');
         var flag = "";
         var allArgs = [];

@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.12)
-project(monero-gui)
+project(zephyr-gui)
 
 message(STATUS "Initiating compile using CMake ${CMAKE_VERSION}")
 
-set(VERSION_MAJOR "18")
-set(VERSION_MINOR "2")
-set(VERSION_REVISION "2")
+set(VERSION_MAJOR "0")
+set(VERSION_MINOR "1")
+set(VERSION_REVISION "0")
 set(VERSION "0.${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_REVISION}")
 
 option(STATIC "Link libraries statically, requires static Qt")
